@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-pretendard {
-  font-family: "Pretendard";
-}
-
 @font-face {
   font-family: "Pretendard";
   font-weight: 900;
@@ -76,4 +72,18 @@
   font-display: swap;
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff")
     format("woff");
+}
+
+.font-pretendard {
+  font-family: "Pretendard";
+}
+
+@layer components {
+  .container {
+    @apply max-w-screen-xl mx-auto px-6;
+  }
+
+  .header-menu {
+    @apply px-6 font-semibold;
+  }
 }
